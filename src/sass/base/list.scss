@@ -1,0 +1,9 @@
+ul:not(.nav) {
+  li {
+    margin: 20px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.results {
+  counter-reset: section;
+
+  li {
+    position: relative;
+    padding-left: 130px;
+    min-height: 150px;
+
+    &::before {
+      position: absolute;
+      width: 12px;
+      height: 26px;
+      content: '';
+      border-left: 2px solid $primary;
+      border-right: 2px solid $primary;
+      transform: skewX(-15deg);
+      left: 110px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: -18px;
+
+      font-size: 150px;
+      font-weight: bold;
+      line-height: 1;
+
+      counter-increment: section;
+      content: counter(section);
+
+      -webkit-text-stroke: 1px $primary;
+      color: $primary;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

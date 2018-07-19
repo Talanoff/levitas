@@ -1,0 +1,22 @@
+#app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+
+  .logo {
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}

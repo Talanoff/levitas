@@ -1,0 +1,15 @@
+.section-about {
+  background-color: #ebebeb;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 300px;
+    left: 70%;
+    bottom: 0;
+    top: -50px;
+    content: '';
+    background-color: $primary;
+    transform: skewX(-15deg);
+  }
+}

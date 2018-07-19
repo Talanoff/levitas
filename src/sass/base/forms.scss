@@ -1,0 +1,49 @@
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+
+  label {
+    position: absolute;
+    left: 10px;
+    bottom: 50%;
+    margin-bottom: 0;
+    transform: translateY(50%);
+    transition: 0.35s;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 90px;
+    border-bottom: 2px solid rgba($body-color, 0.3);
+    content: '';
+    transition: 0.35s;
+  }
+
+  &.is-focused {
+    label {
+      bottom: 100%;
+      transform: none;
+      font-size: 0.975rem;
+      color: $primary;
+    }
+
+    &::before {
+      width: 100%;
+      border-bottom-color: $body-color;
+    }
+  }
+}
+
+.form-control {
+  box-shadow: none !important;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba($body-color, 0.3);
+
+  &:focus {
+    background-color: transparent;
+    border-bottom-color: $body-color;
+  }
+}

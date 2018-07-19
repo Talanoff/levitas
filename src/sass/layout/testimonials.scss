@@ -1,0 +1,44 @@
+.section-testimonials {
+  color: #fff;
+  position: relative;
+}
+
+.testimonials {
+  &-title,
+  &-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  &-title {
+    top: 140px;
+  }
+
+  &-controls {
+    bottom: 80px;
+  }
+
+  &-item {
+    padding: 320px 0 280px;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100%;
+
+    &__body {
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        max-width: 600px;
+      }
+
+      .cite {
+        width: 260px;
+        margin-left: auto;
+        padding-left: 20px;
+        border-left: 1px solid #fff;
+        opacity: 0.75;
+        font-size: 1rem;
+      }
+    }
+  }
+}

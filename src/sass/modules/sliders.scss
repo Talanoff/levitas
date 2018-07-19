@@ -1,0 +1,67 @@
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide > div {
+  height: 100%;
+}
+
+.testimonials {
+  height: 800px;
+}
+
+.top-slider {
+  @extend %abs;
+  z-index: 1;
+
+  &-item {
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+
+.testimonials-controls,
+.top-slider-controls {
+  .btn-next,
+  .btn-prev {
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+    opacity: 0.35;
+    transition: 0.35s;
+
+    &:hover {
+      opacity: 1;
+      fill: $primary;
+    }
+  }
+
+  .btn-prev {
+    transform: scale(-1);
+  }
+
+  .slick-dots {
+    @extend .list-unstyled;
+    margin-bottom: 0;
+    display: flex;
+
+    li {
+      flex: 1;
+      margin: 0 !important;
+      height: 10px;
+      opacity: 0.35;
+      border-bottom: 3px solid #fff;
+      transition: 0.35s;
+
+      &.slick-active {
+        border-bottom: 5px solid $primary;
+        opacity: 1;
+      }
+    }
+
+    button {
+      display: none;
+      text-indent: -9999px;
+    }
+  }
+}

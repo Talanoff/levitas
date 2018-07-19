@@ -1,0 +1,60 @@
+.section-title {
+  @extend .text-uppercase;
+
+  position: relative;
+  margin: 80px 0 50px;
+  padding-top: 15px;
+  max-width: 600px;
+  z-index: -1;
+
+  .dashes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+
+    path {
+      fill: none;
+      stroke: #a5a5a5;
+      stroke-width: 5px;
+      stroke-dasharray: 12, 10;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      width: 300px;
+    }
+  }
+
+  .rect {
+    position: absolute;
+    left: 0;
+    top: -50px;
+
+    path {
+      fill: $primary;
+    }
+  }
+
+  .subtitle {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    font-size: 1.25rem;
+    color: $primary;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &::after {
+    position: absolute;
+    width: 140px;
+    height: 445px;
+    content: '';
+    left: 60px;
+    top: -80px;
+    transform: skewX(-15deg);
+    background-color: #000;
+    opacity: 0.05;
+    z-index: -1;
+  }
+}

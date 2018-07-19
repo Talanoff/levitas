@@ -1,0 +1,75 @@
+.section-format {
+  background-color: $primary;
+  color: #fff;
+
+  .palisade {
+    margin-bottom: -20px;
+    svg path {
+      fill: #fff;
+    }
+  }
+
+  .table {
+    font-size: 1.15rem;
+
+    th {
+      font-weight: normal;
+      color: lighten($primary, 15%);
+      border-bottom: 1px solid $primary;
+    }
+  }
+}
+
+.format-icon {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  color: #fff;
+
+  &__positive {
+    background-color: $success;
+    line-height: 23px;
+  }
+
+  &__negative {
+    background-color: $primary;
+    line-height: 22px;
+  }
+}
+
+.format-decorated {
+  position: relative;
+  color: #4c4c4c;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    content: '';
+    background-color: #fff;
+    z-index: -1;
+  }
+
+  .btn {
+    margin-bottom: -30px;
+
+    svg {
+      fill: #fff;
+      width: 25px;
+      height: 20px;
+      margin-left: 10px;
+      transition: 0.35s;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(15px);
+      }
+    }
+  }
+}

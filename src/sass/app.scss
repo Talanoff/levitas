@@ -1,0 +1,29 @@
+@import "config/variables";
+@import "config/placeholders";
+
+@import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick";
+
+@import "base/body";
+@import "base/list";
+@import "base/section";
+@import "base/headings";
+@import "base/buttons";
+@import "base/forms";
+
+@import "layout/layout";
+@import "layout/header";
+@import "layout/top";
+@import "layout/about";
+@import "layout/quote";
+@import "layout/program";
+@import "layout/questions";
+@import "layout/format";
+@import "layout/enroll";
+@import "layout/testimonials";
+@import "layout/footer";
+
+@import "modules/title";
+@import "modules/results";
+@import "modules/palisade";
+@import "modules/sliders";
