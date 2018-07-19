@@ -42,7 +42,7 @@
   /**
    * Link scroll
    */
-  $('[href^="#"]').on('click', function (e) {
+  $('[href="#enroll"]').on('click', function (e) {
     const href = $(this).attr('href')
     const format = $(this).data('format');
 

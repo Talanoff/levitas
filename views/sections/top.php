@@ -1,11 +1,11 @@
 <header id="app-header">
     <div class="container">
-        <div class="row justify-content-between align-items-center">
+        <div class="row justify-content-center justify-content-md-between align-items-center">
             <div class="col-auto logo d-flex">
                 <svg><use xlink:href="#logo"></use></svg>
                 <h1 class="h5 ml-3">Александр Левитас</h1>
             </div>
-            <div class="col-auto d-flex">
+            <div class="col-auto d-md-flex my-3 my-md-0">
                 <div class="d-flex align-items-center">
                     <svg width="21" height="32" class="mr-2"><use xlink:href="#pin"></use></svg>
                     <div>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex ml-5 align-items-center">
+                <div class="d-flex ml-md-5 mt-3 mt-md-0 align-items-center">
                     <svg width="21" height="21" class="mr-2"><use xlink:href="#calendar"></use></svg>
                     <div>
                         <div class="font-weight-bold">19 октября</div>

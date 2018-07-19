@@ -1,6 +1,10 @@
 .section-about {
   background-color: #ebebeb;
-  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 5;
+  }
 
   &::after {
     position: absolute;

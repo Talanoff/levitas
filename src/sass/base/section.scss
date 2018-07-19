@@ -3,5 +3,9 @@ section {
 }
 
 .section {
-  padding: 140px 0;
+  padding: 60px 0;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: 140px 0;
+  }
 }

@@ -73,3 +73,11 @@
     }
   }
 }
+
+.format-table-wrapper {
+  overflow-x: auto;
+
+  .table {
+    min-width: 700px;
+  }
+}

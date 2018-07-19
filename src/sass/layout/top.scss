@@ -1,8 +1,11 @@
 .section-top {
-  padding: 200px 0 120px;
-  min-height: 100vh;
+  padding: 240px 0 120px;
   color: #fff;
   overflow: hidden;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding-top: 200px;
+  }
 
   .container {
     position: relative;
