@@ -4,3 +4,4 @@ window.slick = require('slick-carousel')
 
 require('bootstrap')
 require('./common')
+require('./reveal')
