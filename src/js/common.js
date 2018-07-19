@@ -59,4 +59,27 @@
     }
   })
 
+  /**
+   * Photos
+   */
+  $(window).on('scroll', function () {
+    const documentOffset = $(document).scrollTop();
+    const sectionOffset = $('.section-quote').offset().top;
+    const questionsOffset = $('.section-questions').offset().top;
+
+    let sc = documentOffset - sectionOffset;
+
+    if (Math.abs(sc) <= questionsOffset && sc <= 0) {
+      $('.main-photo').css({
+        transform: 'translateY('+ sc +'px) scale(' + documentOffset / sectionOffset + ')'
+      })
+    }
+
+    if (sc >= 0) {
+      $('.main-photo').css({
+        transform: 'translateY(0) scale(1)'
+      })
+    }
+  })
+
 })(jQuery)

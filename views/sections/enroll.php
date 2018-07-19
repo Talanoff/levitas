@@ -9,19 +9,19 @@
 				<div class="col-md mb-3 mb-md-0">
 					<div class="form-group mb-0">
 						<label for="enroll-name">Ваше имя</label>
-						<input type="text" name="user_name" id="enroll-name" class="form-control">
+						<input type="text" name="user_name" id="enroll-name" class="form-control" required>
 					</div>
 				</div>
 				<div class="col-md mb-3 mb-md-0">
 					<div class="form-group mb-0">
 						<label for="enroll-email">Ваш e-mail</label>
-						<input type="email" name="user_email" id="enroll-email" class="form-control">
+						<input type="email" name="user_email" id="enroll-email" class="form-control" required>
 					</div>
 				</div>
 				<div class="col-md">
 					<div class="form-group mb-0">
 						<label for="enroll-phone">Ваш телефон</label>
-						<input type="tel" name="user_phone" id="enroll-phone" class="form-control">
+						<input type="tel" name="user_phone" id="enroll-phone" class="form-control" required>
 					</div>
 				</div>
 			</div>

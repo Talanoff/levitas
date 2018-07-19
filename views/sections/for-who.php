@@ -13,7 +13,7 @@
 		echo '<div class="row pt-5">';
 
 		foreach ($items as $key => $item) {
-			echo '<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0 text-center">'
+			echo '<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0 text-center for-who">'
 			     . '<p class="mb-5"><img src="images/icon-who--' . ($key + 1) . '.png"></p>'
 			     . $item
 			     . '</div>';

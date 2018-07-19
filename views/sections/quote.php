@@ -1,4 +1,4 @@
-<section class="section-quote">
+<section class="section section-quote">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9 col-lg-7">
@@ -16,4 +16,6 @@
 			</div>
 		</div>
 	</div>
+
+    <div class="main-photo"></div>
 </section>

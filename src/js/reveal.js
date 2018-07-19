@@ -2,10 +2,10 @@ const ScrollReveal = require('scrollreveal');
 
 window.sr = ScrollReveal();
 
-sr.reveal('section, footer', {
-  distance: '50px',
-  mobile: false
-});
+// sr.reveal('section, footer', {
+//   distance: '50px',
+//   mobile: false
+// });
 
 sr.reveal('.section-title', {
   origin: 'left',
@@ -13,7 +13,7 @@ sr.reveal('.section-title', {
   duration: 1000
 })
 
-sr.reveal('ol li, ul li, table td', {
+sr.reveal('ol li, ul li, table td, .for-who', {
   origin: 'top',
   distance: '100px'
 }, 20)
@@ -24,7 +24,7 @@ sr.reveal('.palisade', {
   duration: 1000
 })
 
-sr.reveal('header', {
-  origin: 'top',
-  distance: '50px'
-})
+// sr.reveal('header', {
+//   origin: 'top',
+//   distance: '50px'
+// })

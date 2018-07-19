@@ -6,6 +6,17 @@
     z-index: 5;
   }
 
+  &::before {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    background: url('/images/levitas-second.png') 0 100% / contain no-repeat;
+    z-index: 3;
+  }
+
   &::after {
     position: absolute;
     width: 300px;
@@ -15,5 +26,6 @@
     content: '';
     background-color: $primary;
     transform: skewX(-15deg);
+    z-index: 2;
   }
 }
